@@ -8,11 +8,10 @@ const myForm = (event) => {
 
     let idNumber = peliculas.length + 1;
     let name = document.getElementById("nombre");
-    let year = document.getElementById("anio");
+    let anio = document.getElementById("anio");
     
 
     peliculas.push({nombre: name.value, anio: anio.value, id: idNumber})
-    let peliculaActual = {nombre: name.value, anio: anio.value, id: idNumber}
 
     escritos.push(
       `<ul>
@@ -21,8 +20,13 @@ const myForm = (event) => {
       </ul>`);
 
     let idCurrent = escritos.length - 1
+
     escritura(idCurrent);
     contador()
+}
+
+function escritura (parametro) {
+  formValues.innerHTML += escritos[parametro]
 }
 
 function contador() {
@@ -30,9 +34,7 @@ function contador() {
     alert('Tienes Buenos Gustos')
     }
 }
-function escritura (parametro) {
-  formValues.innerHTML += escritos[parametro]
-}
+
 
 
 
