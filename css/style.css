@@ -1,3 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
 
+section {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section form {
+  background-color: #eff313;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 30%;
+  text-align: center;
+}
+section form ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section form ul li {
+  margin-top: 1rem;
+}
+section form ul input {
+  border-radius: 4px;
+  height: 2rem;
+  text-indent: 0.5rem;
+}
+section form ul button {
+  border-radius: 4px;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+}
+section form ul button:hover {
+  color: black;
+  background-color: white;
+}
+section div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+section div ul {
+  background-color: yellow;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
 
 /*# sourceMappingURL=style.css.map */
